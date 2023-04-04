@@ -4,13 +4,14 @@ import { BrowserRouter as Router, Routes, useNavigate } from "react-router-dom";
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import NotFound from "../pages/NotFound";
 import Notice from "../pages/Notice";
+import QnA from "../pages/QnA";
 
 const MainLayout = () => {
 
     const { Header, Content, Footer } = Layout;
     const routes = [
         {path: '/notice', element: <Notice />},
-        {path: '/qna'},  //  , element: <QnA />
+        {path: '/qna', element: <QnA />},
     ]
 
     return (
