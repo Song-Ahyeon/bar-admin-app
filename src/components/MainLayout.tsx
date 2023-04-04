@@ -9,7 +9,8 @@ const MainLayout = () => {
 
     const { Header, Content, Footer } = Layout;
     const routes = [
-        {path: '/notice', element: <Notice />}
+        {path: '/notice', element: <Notice />},
+        {path: '/qna'},  //  , element: <QnA />
     ]
 
     return (
