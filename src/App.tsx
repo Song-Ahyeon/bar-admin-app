@@ -15,15 +15,18 @@ function App() {
     console.log('Failed:', errorInfo);
   };
 
+  // useState router 체크 후 isLogin false일 경우 baseURL로 redirect
+
   return (
     <div>
       {isLogin ? <MainLayout /> :
       <>
+      <div style={{ display: 'flex', height: '720px'}}>
       <div style={{
-        display: 'flex',
-        alignContent: 'center',
-        outline: '1px solid red'
+        display: 'block',
+        margin: 'auto'
       }}>
+        <p>LOGO AREA</p>
           <Form
             name="basic"
             labelCol={{ span: 8 }}
@@ -56,6 +59,7 @@ function App() {
               </Button>
             </Form.Item>
           </Form>
+        </div>
         </div>
         </>
 
