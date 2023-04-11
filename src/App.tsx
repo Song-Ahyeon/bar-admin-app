@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import MainLayout from './components/MainLayout'
 import { Button, Checkbox, Input, Form } from 'antd';
